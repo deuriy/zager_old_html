@@ -1,0 +1,39 @@
+.TextBlock
+	display grid
+	grid-template-columns 1fr 1fr
+	gap 30px
+	color #181818
+	
+	&_title
+		margin-bottom 24px
+		font-weight 700
+		font-size 25px
+	
+	&_text
+		margin-bottom 18px
+		font-size 16px
+		line-height 22px
+	
+	&_price
+		margin-bottom 17px
+		font-weight 700
+		color $orange
+	
+	&_link
+		display inline-grid
+		border-bottom 1px solid #181818
+		font-weight 700
+		font-size 15px
+		line-height 21px
+		color #181818
+		text-decoration none
+		@extend .transition
+		
+		&:hover
+			border-bottom-color transparent
+	
+	&_right
+		min-width 0
+	
+	&_swiper
+		margin-top 6px
