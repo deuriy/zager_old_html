@@ -4,11 +4,15 @@ html(lang="en")
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     //- meta(name='description' content='')
-    title Website title
+    title Zager old
     link(href="/img/favicon.svg", rel="icon", type="image/svg+xml")
     link(href="/css/vendor.css", rel="stylesheet")
     link(href="/css/styles.css", rel="stylesheet")
     script(src="/js/vendor.js", defer="")
     script(src="/js/app.js", defer="")
   body
-    block content
+    .Wrapper
+      include ../blocks/Header
+      main.Main
+        block content
+      include ../blocks/Footer

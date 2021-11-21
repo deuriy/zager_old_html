@@ -1,0 +1,67 @@
+.Footer
+  background $black
+  
+  &_top
+    padding 71px 0 69px
+    border-bottom 1px solid rgba($white, .15)
+
+    @media $lgMinus
+      padding 50px 0
+
+    @media $xs
+      padding 40px 0
+
+  &_topWrapper
+    display grid
+    grid-template-columns calc(29.3% - 25px) calc(17.8% - 25px) calc(19.1% - 25px) calc(20.6% - 25px) 1fr
+    column-gap 25px
+
+    @media $lgMinus
+      grid-template-columns calc(22.5% - 15px) calc(17.8% - 15px) calc(19.1% - 15px) calc(20.6% - 15px) 1fr
+      column-gap 15px
+
+    @media $xs
+      grid-template-columns 100%
+  
+  &_col
+    @media $xs
+      &-logo
+        margin-bottom 54px
+      
+      &-borderTop
+        border-top 1px solid rgba($white, .15)
+  
+  &_logo,
+  &_logoImg
+    display block
+  
+  &_logo
+    margin-top 17px
+
+    @media $xs
+      margin-top 0
+  
+  &_logoImg
+    @media $lgMinus
+      width 130px
+
+    @media $xs
+      width 107px
+      margin-right auto
+      margin-left auto
+  
+  &_socIcons
+    margin-top 20px
+
+    @media $xs
+      margin-top 40px
+  
+  &_bottom
+    padding 10px 0
+    text-align center
+  
+  &_copyright
+    color $white
+    opacity 0.75
+    font-size 14px
+    line-height 1.571428
