@@ -1,21 +1,39 @@
 extends layouts/base
 
 block content
-  .MainBanner
+  .HomePage
+    .MainBanner.HomePage_mainBanner
+      .Container
+        .MainBanner_block
+          .MainBanner_blockInner
+            h1.MainBanner_title Zager Guitar Luxury Accessories Bundle
+            .Label.Label-mainBanner.MainBanner_label Includes everything you need to Take Good Care of your Zager and even Learn How Play It:
+            .MainBanner_listAndPrice
+              ul.List.MainBanner_list
+                li.List_item Zager Pro ABS case with digital humidity system ($195)
+                li.List_item LIFETIME Access to the Zager lesson library ($199)
+                li.List_item A year's worth of Zager EZ-Play custom guitar strings ($99)
+                li.List_item A year's worth of Zager Pro Carbon guitar picks ($45)
+                li.List_item A Zager hand-stitched padded leather embossed strap ($48)
+                li.List_item A Zager pro custom capo ($39)
+              .MainBanner_price
+                .MainBanner_priceLabel Only
+                .MainBanner_priceValue $599
+            a(href="#").BtnDefault.MainBanner_btn ADD TO CART
     .Container
-      .MainBanner_block
-        .MainBanner_blockInner
-          h1.MainBanner_title Zager Guitar Luxury Accessories Bundle
-          .Label.Label-mainBanner.MainBanner_label Includes everything you need to Take Good Care of your Zager and even Learn How Play It:
-          .MainBanner_listAndPrice
-            ul.List.MainBanner_list
-              li.List_item Zager Pro ABS case with digital humidity system ($195)
-              li.List_item LIFETIME Access to the Zager lesson library ($199)
-              li.List_item A year's worth of Zager EZ-Play custom guitar strings ($99)
-              li.List_item A year's worth of Zager Pro Carbon guitar picks ($45)
-              li.List_item A Zager hand-stitched padded leather embossed strap ($48)
-              li.List_item A Zager pro custom capo ($39)
-            .MainBanner_price
-              .MainBanner_priceLabel Only
-              .MainBanner_priceValue $599
-          a(href="#").BtnDefault.MainBanner_btn Add to cart
+      .CTABlock.HomePage_ctaBlock
+        .CTABlock_inner
+          h2.CTABlock_title #[span.Orange Get the Entire Bundle For Free] if You Pre-Order Your Guitar within the Next 48 Hours!
+          a(href="#").CTABlock_link Learn more
+          .CTABlock_bottom
+            a(href="#").BtnDefault.CTABlock_btn Pre-order today
+            .CircularBlocks.CTABlock_circularBlocks
+              .CircularBlock.CircularBlocks_item
+                .CircularBlock_number 47
+                .CircularBlock_label Hours
+              .CircularBlock.CircularBlock-second.CircularBlocks_item
+                .CircularBlock_number 59
+                .CircularBlock_label Minutes
+              .CircularBlock.CircularBlock-third.CircularBlocks_item
+                .CircularBlock_number 45
+                .CircularBlock_label Seconds

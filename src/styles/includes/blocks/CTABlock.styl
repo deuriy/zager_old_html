@@ -1,0 +1,46 @@
+.CTABlock
+	position relative
+	padding 22px
+	background $black
+	
+	&::before
+		content ""
+		position absolute
+		top 0
+		right 0
+		bottom 0
+		width 338px
+		background $black url('../img/bg_cta_guitar.webp') right center no-repeat
+		pointer-events none
+	
+	&_inner
+		position relative
+		width 620px
+		max-width 100%
+	
+	&_title
+		margin-bottom 15px
+		color $white
+		font-weight 300
+		font-size 28px
+		line-height 35px
+	
+	&_link
+		display inline-grid
+		margin-bottom 3px
+		border-bottom 1px solid $white
+		color $white
+		font-size 12px
+		line-height 21px
+		filter drop-shadow(0 1px 0.5px rgba($black, 0.16))
+		text-decoration none
+	
+	&_bottom
+		display grid
+		grid-template-columns auto auto
+		justify-content space-between
+		align-items center
+		padding-right 18px
+	
+	&_circularBlocks
+		margin-top 6px
