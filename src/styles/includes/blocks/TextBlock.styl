@@ -1,8 +1,10 @@
 .TextBlock
-	display grid
-	grid-template-columns 1fr 1fr
-	gap 30px
 	color #181818
+	
+	&_wrapper
+		display grid
+		grid-template-columns 1fr 1fr
+		gap 30px
 	
 	&_title
 		margin-bottom 24px
@@ -10,9 +12,22 @@
 		font-size 25px
 	
 	&_text
+		margin-bottom 26px
+		font-size 16px
+		line-height 22px
+	
+	&_subTitle
+		margin-top 38px
 		margin-bottom 18px
 		font-size 16px
 		line-height 22px
+		color #333
+	
+	&_video
+		margin-bottom 24px
+	
+	&_list
+		margin-bottom 37px
 	
 	&_price
 		margin-bottom 17px
@@ -34,6 +49,29 @@
 	
 	&_right
 		min-width 0
+		padding-top 6px
 	
-	&_swiper
-		margin-top 6px
+	&_img
+		margin-bottom 33px
+		
+		&:last-child
+			margin-bottom 0
+	
+	&-borderBottom
+		padding-bottom 30px
+		border-bottom 1px solid #a6a6a6
+		
+	&-largeTextWidth
+		padding-bottom 35px
+		
+		.TextBlock_title
+			margin-bottom 36px
+			
+		.TextBlock_wrapper
+			grid-template-columns 1fr auto
+		
+		.TextBlock_text
+			margin-bottom 33px
+		
+		.TextBlock_right
+			padding-top 0
