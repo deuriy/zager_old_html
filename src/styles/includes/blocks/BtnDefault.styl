@@ -20,6 +20,9 @@
 	cursor pointer
 	@extend .transition
 	
+	@media $xs
+		width 280px
+	
 	&:hover
 		background darken($blue, 10)
 	
@@ -29,3 +32,8 @@
 	
 	&-subscribeForm
 		width 204px
+		
+		@media $xs
+			width 100%
+			padding-top 17px
+			padding-bottom 17px

@@ -4,6 +4,9 @@
 	border-top 1px solid #a6a6a6
 	border-bottom 1px solid #a6a6a6
 	
+	@media $xs
+		padding-bottom 30px
+	
 	&_title
 		position absolute
 		top -12px
@@ -19,6 +22,10 @@
 		display grid
 		grid-template-columns 1fr 1fr
 		gap 28px
+		
+		@media $xs
+			grid-template-columns 100%
+			gap 15px
 	
 	&-noBorderBottom
 		padding-bottom 0

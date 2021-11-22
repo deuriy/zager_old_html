@@ -7,6 +7,10 @@
 		margin-left -6px
 		padding 23px 30px 34px
 		background rgba($black, .8)
+		
+		@media $xs
+			padding-right 15px
+			padding-left 15px
 	
 	&_blockInner
 		width 696px
@@ -19,9 +23,16 @@
 		color $white
 		font-weight normal
 		font-size 35px
+		
+		@media $xs
+			font-size 18px
+			text-align center
 	
 	&_label
 		margin-bottom 32px
+		
+		@media $xs
+			text-align center
 	
 	&_listAndPrice
 		display grid
@@ -30,10 +41,19 @@
 		gap 25px
 		margin-right 21px
 		margin-bottom 37px
+		
+		@media $xs
+			grid-template-columns 100%
 	
 	&_price
 		margin-bottom -3px
 		color $orange
+		
+		@media $xs
+			display grid
+			grid-template-columns auto auto
+			justify-content end
+			gap 25px
 	
 	&_priceLabel
 		margin-left -4px

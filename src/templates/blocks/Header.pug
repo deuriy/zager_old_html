@@ -1,10 +1,11 @@
-header.Header
+header.Header.hidden-xs
 	.Header_top
 		.Container.Header_topContainer
+			a(href="#").MenuHamburger.hidden-smPlus
 			a(href="/").Header_logo
 				img(src="/img/logo.svg" alt="Logo").Header_logoImg
-			.Label.Label-guarantee 100% Money Back Guarantee. Free Shipping both ways
-	.Header_bottom
+			.Label.Label-guarantee.hidden-xs 100% Money Back Guarantee. Free Shipping both ways
+	.Header_bottom.hidden-xs
 		.Container.Header_bottomContainer
 			.MainMenu
 				ul.MainMenu_list
@@ -21,3 +22,4 @@ header.Header
 					li.MainMenu_item
 						a(href="#").MainMenu_link FAQs
 			a(href="#").Label.Label-cart.Header_cartLabel Cart
+.MobileNavigation
