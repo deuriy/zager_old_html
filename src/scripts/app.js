@@ -1,35 +1,35 @@
 import Swiper from 'swiper/bundle';
 
-function slideToggle(elem) {
-  if (elem.offsetHeight < elem.scrollHeight) {
-    elem.style.maxHeight = `${elem.scrollHeight}px`;
-  } else {
-    elem.style.maxHeight = '';
-  }
-}
+// function slideToggle(elem) {
+//   if (elem.offsetHeight < elem.scrollHeight) {
+//     elem.style.maxHeight = `${elem.scrollHeight}px`;
+//   } else {
+//     elem.style.maxHeight = '';
+//   }
+// }
 
-let menuHamburger = document.querySelector('.MenuHamburger');
-let mobileNavigation = document.querySelector('.MobileNavigation');
-let mobileMainMenu = document.querySelector('.MobileNavigation .MainMenu');
-// let closeMobileNavigation = document.querySelector('.MobileNavigation_closeBtn');
+// let menuHamburger = document.querySelector('.MenuHamburger');
+// let mobileNavigation = document.querySelector('.MobileNavigation');
+// let mobileMainMenu = document.querySelector('.MobileNavigation .MainMenu');
+// // let closeMobileNavigation = document.querySelector('.MobileNavigation_closeBtn');
 
-menuHamburger.addEventListener('click', function (e) {
-  menuHamburger.classList.toggle('MenuHamburger-active');
-  mobileNavigation.classList.toggle('MobileNavigation-opened');
+// menuHamburger.addEventListener('click', function (e) {
+//   menuHamburger.classList.toggle('MenuHamburger-active');
+//   mobileNavigation.classList.toggle('MobileNavigation-opened');
 
-  document.body.style.overflow = document.documentElement.clientWidth < 768 ? 'hidden' : '';
+//   document.body.style.overflow = document.documentElement.clientWidth < 768 ? 'hidden' : '';
 
-  e.preventDefault();
-});
+//   e.preventDefault();
+// });
 
-document.addEventListener('click', function (e) {
-  if (document.documentElement.clientWidth > 767) {
-    if (!mobileNavigation.contains(e.target) && !menuHamburger.contains(e.target)) {
-      menuHamburger.classList.remove('MenuHamburger-active');
-      mobileNavigation.classList.remove('MobileNavigation-opened');
-    }
-  }
-});
+// document.addEventListener('click', function (e) {
+//   if (document.documentElement.clientWidth > 767) {
+//     if (!mobileNavigation.contains(e.target) && !menuHamburger.contains(e.target)) {
+//       menuHamburger.classList.remove('MenuHamburger-active');
+//       mobileNavigation.classList.remove('MobileNavigation-opened');
+//     }
+//   }
+// });
 
 // closeMobileNavigation.addEventListener('click', function (e) {
 //   menuHamburger.classList.remove('MenuHamburger-active');

@@ -10,7 +10,8 @@
 	background-color $blue
 	filter drop-shadow(0 1px 0.5px rgba($black, 0.16))
 	font-weight 700
-	font-size 12px
+	// font-size 12px
+	font-size 16px
 	line-height 21px
 	font-family $baseFont
 	color $white
@@ -26,17 +27,30 @@
 	&:hover
 		background darken($blue, 10)
 	
+	&-mainBanner
+		@media $xs
+			padding-top 14px
+			padding-bottom 14px
+	
 	&-productCards
 		padding-top 14px
 		padding-bottom 13px
 	
 	&-subscribeForm
-		width 204px
+		// width 204px
+		// width 260px
+		width 240px
+		padding-right 14px
+		padding-left 14px
+		font-size 15px
 		
 		@media $xs
 			width 100%
-			padding-top 17px
-			padding-bottom 17px
+			padding 17px 6px
+	
+	&-ctaBlock
+		@media $xs
+			width 230px
 	
 	&-ctaBlockLarge
 		@media $xs

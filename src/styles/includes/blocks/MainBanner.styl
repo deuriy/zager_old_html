@@ -3,20 +3,26 @@
 	background url('../img/bg_main_banner.webp') center 0 / cover no-repeat
 	
 	&_block
-		margin-right -4px
-		margin-left -6px
 		padding 23px 30px 34px
 		background rgba($black, .8)
 		
 		@media $xs
-			padding-right 15px
-			padding-left 15px
+			padding-right 5px
+			padding-left 5px
+		
+		@media $smPlus
+			margin-right -4px
+			margin-left -6px
 	
 	&_blockInner
 		width 696px
 		max-width 100%
 		margin-right auto
 		margin-left auto
+		
+		@media $xs
+			display grid
+			justify-items center
 	
 	&_title
 		margin-bottom 17px
@@ -25,6 +31,7 @@
 		font-size 35px
 		
 		@media $xs
+			margin-bottom 24px
 			font-size 18px
 			text-align center
 	
@@ -32,6 +39,7 @@
 		margin-bottom 32px
 		
 		@media $xs
+			margin-bottom 40px
 			text-align center
 	
 	&_listAndPrice
@@ -44,6 +52,9 @@
 		
 		@media $xs
 			grid-template-columns 100%
+			margin-bottom 27px
+			margin-right 10px
+			margin-left 10px
 	
 	&_price
 		margin-bottom -3px
@@ -53,11 +64,16 @@
 			display grid
 			grid-template-columns auto auto
 			justify-content end
-			gap 25px
+			gap 16px
 	
 	&_priceLabel
-		margin-left -4px
 		font-size 14px
+		
+		@media $xs
+			margin-top 6px
+		
+		@media $smPlus
+			margin-left -4px
 	
 	&_priceValue
 		font-size 33px
